@@ -60,8 +60,8 @@ header{
 }
 header img{
     margin: 10px;
-    padding: 10px;
-}nav{
+    padding: 10px;}
+nav{
     gap:70px;
     display:flex;
     padding:10px;
