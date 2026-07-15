@@ -1,30 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="style.css">
-        <title>browse events
-    </title>
-    </head>
-    <nav class="flex flex-row justify-between items-center p-12 bg-red-700  text-white">
-        <p>We wanna party</p>
-        <a href="#index">Home</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-        <a href="login.html">Login</a>
-    </nav>
-    <body class="bg-black text-white">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <main class="browse-events">
-        <h2 class="text-center text-2xl mt-8">Browse Events</h2>
-        <p class="text-center">Find events that match your interests and location</p>
-        <div class="container flex flex-wrap justify-center gap-6 mt-6">
-                
-                <h3 class="text-lg font-semibold">search events,artist,venues</h3>
-                <p class="text-sm">Location</p>
-                <button class="mt-16 bg-red-700 text-white px-6 py-8 rounded">search</button>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Browse Events</title>
+</head>
 
+<body class="bg-black text-white">
+
+    <nav class="flex flex-row justify-between items-center p-12 bg-red-700">
+        <p class="font-bold">We wanna party</p>
+        <div class="flex gap-4 bg-red-500">
+            <a href="#index" class="hover:underline">Home</a>
+            <a href="about.html" class="hover:underline">About</a>
+            <a href="contact.html" class="hover:underline">Contact</a>
+            <a href="login.html" class="hover:underline">Login</a>
+        </div>
+    </nav>
+
+    <main>
+        <h2 class="text-center text-2xl mt-8">Browse Events</h2>
+        <p class="text-center mb-6">Find events that match your interests and location</p>
+
+        <div class="max-w-md mx-auto border border-red-400 rounded-2xl p-4">
+            <div class="text-center m-4">
+                <i class="fa-solid fa-users"></i>
+                <input type="text" placeholder="Search Events Artists"
+                    class="bg-white text-black w-[300px] border border-red-500 rounded-xl px-4 py-1">
             </div>
+
+            <div class="text-center m-4">
+                <i class="fa-solid fa-location-dot"></i>
+                <input type="text" placeholder="Location"
+                    class="bg-white text-black w-[300px] border border-red-500 rounded-xl px-4 py-1">
+            </div>
+
+            <div class="text-center m-4">
+                <i class="fa-solid fa-users"></i>
+                <i class="fa-brands fa-chrome"></i>
+                <input type="submit" value="SEARCH"
+                    class="w-[300px] text-white bg-red-500 border border-red-500 rounded-xl px-4 py-1 cursor-pointer font-bold hover:bg-red-600">
+            </div>
+        </div>
     </main>
+
+</body>
+</html>
